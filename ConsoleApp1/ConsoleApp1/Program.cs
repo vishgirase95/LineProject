@@ -9,7 +9,7 @@ namespace ConsoleApp1
         {
 
             double LengthOfLine = Math.Sqrt((x2 - x1) + (y2 - y1));
-            Console.WriteLine(LengthOfLine);
+            Console.WriteLine(LengthOfLine + "length of line ");
             return LengthOfLine;
         }
         public static void compare(double line1, double line2)
@@ -18,10 +18,18 @@ namespace ConsoleApp1
             {
                 Console.WriteLine("Both Lines are equal");
             }
+            else if(line1 > line2)
+            {
+                Console.WriteLine("line1greater than line2");
+
+            }
+            else if (line1 < line2)
+            {
+                Console.WriteLine("line1 lss than line2");
+            }
             else
             {
-                Console.WriteLine("Both Lines are not equal");
-
+                Console.WriteLine("There is the error");
             }
             
 
@@ -34,8 +42,8 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Console.WriteLine("Well Come to Line Comparision Computation program on master branch");
-            double line1=lineLength(10, 5, 15, 5);
-            double line2=lineLength(10, 5, 15, 5);
+            double line1 = lineLength(10, 5, 15, 10);
+            double line2 = lineLength(20, 10, 30, 20);
             compare(line1,line2);
 
         }
