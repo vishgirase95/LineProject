@@ -8,8 +8,8 @@ namespace ConsoleApp1
         public static double lineLength(double x1,double y1, double x2,double y2)
         {
 
-            double LengthOfLine = Math.Sqrt((x2 - x1) + (y2 - y1));
-            Console.WriteLine(LengthOfLine + "length of line ");
+            double LengthOfLine = Math.Sqrt(((x2 - x1)*(x2-x1)) + ((y2 - y1)*(y2-y1)));
+            Console.WriteLine(LengthOfLine + "  length of line ");
             return LengthOfLine;
         }
         public static void compare(double line1, double line2)
@@ -20,12 +20,12 @@ namespace ConsoleApp1
             }
             else if(line1 > line2)
             {
-                Console.WriteLine("line1greater than line2");
+                Console.WriteLine("line1 greater than line2");
 
             }
             else if (line1 < line2)
             {
-                Console.WriteLine("line1 lss than line2");
+                Console.WriteLine("line1 less than line2");
             }
             else
             {
