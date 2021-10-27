@@ -8,7 +8,7 @@ namespace ConsoleApp1
         public static double lineLength(double x1,double y1, double x2,double y2)
         {
 
-            double LengthOfLine = Math.Sqrt((x2 - x1) + (y2 - y1));
+            double LengthOfLine = Math.Sqrt(((x2 - x1)*(x2-x1)) + ((y2 - y1)*(y2-y1)));
             Console.WriteLine(LengthOfLine);
             return LengthOfLine;
         }
